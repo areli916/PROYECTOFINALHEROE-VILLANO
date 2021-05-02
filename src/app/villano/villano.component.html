@@ -1,0 +1,41 @@
+<h1>
+    <b>  Lista de Villanos </b>
+
+</h1>
+<ul>
+    <table>
+        <tr>
+            <td>
+                ID
+            </td>
+            <td>
+                VILLANO
+            </td>
+            <td>
+                PODER
+            </td>
+            <td>
+                NOMBRE PODER
+            </td>
+        </tr>
+        <tr *ngFor="let villano of VILLANOS; let i= index">
+            <td>
+                {{ villano.id }}
+            </td>
+            <td>
+                {{ villano.nombre }}
+            </td>
+            <td>
+                {{ villano.poder }}
+            </td>
+            <td>
+                {{villano.nombrepoder}}
+
+            </td>
+            <td>
+                <button (click)="aumentarPoder(villano.id,villano.poder,villano.nombre,villano.nombrepoder)">Aumentar Poder</button>
+            </td>
+
+        </tr>
+    </table>
+</ul>

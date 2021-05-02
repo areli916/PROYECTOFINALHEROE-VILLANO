@@ -1,0 +1,13 @@
+<h1>Funciona con un heroe llamado {{ nombre }}</h1>
+<dl>
+    <td>nombre: </td>
+    <dd>{{nombre}}</dd>
+    <td>edad: </td>
+    <dd>{{edad}}</dd>
+    <td>Funcion: </td>
+    <dd>{{obtenerNombre()}}</dd>
+    <td> Mayusculas: </td>
+    <dd>{{nombreMayusculas}}</dd>
+</dl>
+<button (click)="cambiarNombre()">Cambiar Nombre</button>
+<button (click)="cambiarEdad()">Cambiar Edad</button>
